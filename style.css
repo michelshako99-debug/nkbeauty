@@ -127,7 +127,7 @@ p {
     height: 100%;
     object-fit: cover;
     box-shadow: 0 0 35px rgba(0, 0, 0, 0.952);
-    border-radius: 2%;
+    border-radius: 2px;
 }
 
 .home__button button{
