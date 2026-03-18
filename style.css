@@ -152,6 +152,7 @@ p {
     position: absolute;
     top: 100px;
     right: 8px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content:center;
@@ -163,12 +164,10 @@ p {
     width: 0%;
     border-radius: 2%;
 }
-
 .home__about-us img{
     height: 450px;
     width: 400px;
     object-fit: cover;
-}
 
 .home__button button:last-child{
     margin-left: 15px;
