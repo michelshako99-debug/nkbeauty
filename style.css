@@ -1,5 +1,5 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -16,13 +16,15 @@
     width: 5px;
     background-color: rgb(177, 173,173);
     border-radius: 3px;
-
 }
+
 body{
     background-color: #be7d51;
-    min-width: 1200px; /* Force la largeur minimale pour garder ton design intact */
-    overflow-x: hidden;
+    /* AJOUT ICI : On force la largeur pour garder le design PC */
+    min-width: 1200px; 
+    overflow-x: hidden; 
 }
+
 a{
     text-decoration: 0;
     color: #000;
@@ -33,16 +35,17 @@ a{
 }
 ul{
     list-style: none;
-
 }
+
 header{
     display: flex;
-    min-width: 1200px;
     align-items: center;
     justify-content: space-between;
     margin: 0 8%;
     padding: 20px 0;
     border-bottom: 1px solid #000;
+    /* AJOUT ICI */
+    min-width: 1000px;
 }
 
 .header__logo{
@@ -84,6 +87,7 @@ header{
     background-color: #000;
     color: #fff;
 }
+
 /* class */
 .title{
     text-transform: uppercase;
@@ -97,8 +101,8 @@ p {
     letter-spacing: 0;
     font-size: 20px;
     line-height: 25px;
-
 }
+
 /* home */
 .home {
     padding: 0 8%;
@@ -107,15 +111,16 @@ p {
     justify-content: space-between;
     height: calc(100vh - 80px);
     width: 100%;
+    /* AJOUT ICI */
+    min-width: 1200px;
 }
 
 .home__left {
     width: 35%;
-
 }
 
 .home__right {
-    width: 60%; /* Largeur augmentée */
+    width: 60%; 
     height: 500px;
 }
 
@@ -126,6 +131,7 @@ p {
     box-shadow: 0 0 35px rgba(0, 0, 0, 0.952);
     border-radius: 20%;
 }
+
 .home__button button{
     border: 1px solid #000;
     cursor: pointer;
@@ -135,16 +141,17 @@ p {
     text-transform: uppercase;
     box-shadow: 0 0 8px rgb(0,0,0,0.1);
 }
+
 .home__button button:hover {
     background-color: #000;
     color: #EAE2D2;
     transition: 0.5s ease-out;
 }
+
 .home__about-us {
     position: absolute;
     top: 100px;
     right: 8px;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content:center;
@@ -156,28 +163,33 @@ p {
     width: 0%;
     border-radius: 2%;
 }
+
 .home__about-us img{
     height: 450px;
     width: 400px;
     object-fit: cover;
 }
+
 .home__button button:last-child{
     margin-left: 15px;
 }
+
 .home__button button:last-child:focus .home__about-us{
     width: 52%;
     border-left: 1px solid #5e493a;
 }
+
 .home__about-us h1{
     margin-bottom: 20px;
     font-size: 35px;
     color: #000;
 }
-/*home*/
 
 /*best sales*/
 .best-sales {
     padding: 20px 8%;
+    /* AJOUT ICI */
+    min-width: 1200px;
 }
 .best-sales__product {
     margin-top: 45px;
@@ -187,30 +199,15 @@ p {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     height: 80vh;
+}
+.div1{ grid-area: 1/1/6/3; }
+.div2{ grid-area: 2/3/7/5; }
+.div3{ grid-area: 1/5/7/6; }
+.div4{ grid-area: 1/3/2/5; }
+.div5{ grid-area: 6/1/7/3; }
+.div6{ grid-area: 1/6/6/8; }
+.div7{ grid-area: 6/6/7/8; }
 
-}
-.div1{
-    grid-area: 1/1/6/3;
-}
-.div2{
-    grid-area: 2/3/7/5;
-}
-.div3{
-    grid-area: 1/5/7/6;
-}
-.div4{
-    grid-area: 1/3/2/5;
-}
-.div5{
-    grid-area: 6/1/7/3;
-}
-.div6{
-    grid-area: 1/6/6/8;
-}
-.div7{
-    grid-area: 6/6/7/8;
-
-}
 .best-sales__product div img {
     width: 100%;
     height: 100%;
@@ -219,15 +216,14 @@ p {
     transition: 0.5s ease-out;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.952);
 }
-.best-sales__product div img:hover {
-    filter:grayscale(0%) ;
-}
+
 .best-sales__product span{
     color: #000000;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 20px;
 }
+
 .div5,.div4,.div7,.div3 {
     border: 1px solid #000;
     display: flex;
@@ -248,6 +244,7 @@ p {
 .img-section {
     padding: 20% 8%;
     width: 100%;
+    min-width: 1200px;
 }
 .img-section__content {
     width: 100%;
@@ -270,9 +267,6 @@ p {
     filter: grayscale(0);
     border-radius: 2%;
 }
-.img-section img:hover {
-    filter: grayscale(0);
-}
 .img-section__content p {
     text-align: center;
     border: 1px solid #000;
@@ -292,20 +286,14 @@ footer {
     padding: 35px 8%;
     margin-top: 35px;
     text-transform: uppercase;
+    min-width: 1200px;
 }
 
-.col1 {
-    grid-area: 1/1/4/4;
-}
-.col2 {
-    grid-area: 1/4/4/6;
-}
-.col3 {
-    grid-area: 1/6/4/8;
-}
-.col4 {
-    grid-area: 1/8/4/10;
-}
+.col1 { grid-area: 1/1/4/4; }
+.col2 { grid-area: 1/4/4/6; }
+.col3 { grid-area: 1/6/4/8; }
+.col4 { grid-area: 1/8/4/10; }
+
 .col2, .col3 {
     display: flex;
     flex-direction: column;
@@ -331,9 +319,6 @@ footer {
     border: 0;
     transition: 0.5s;
     cursor: pointer;
-}
-.footer__newletter button:hover {
-    font-weight: bold;
 }
 .icons {
     display: flex;
