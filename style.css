@@ -20,6 +20,8 @@
 }
 body{
     background-color: #be7d51;
+    min-width: 1200px; /* Force la largeur minimale pour garder ton design intact */
+    overflow-x: hidden;
 }
 a{
     text-decoration: 0;
@@ -35,6 +37,7 @@ ul{
 }
 header{
     display: flex;
+    min-width: 1200px;
     align-items: center;
     justify-content: space-between;
     margin: 0 8%;
