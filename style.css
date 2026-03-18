@@ -168,7 +168,7 @@ p {
     height: 450px;
     width: 400px;
     object-fit: cover;
-
+}
 .home__button button:last-child{
     margin-left: 15px;
 }
