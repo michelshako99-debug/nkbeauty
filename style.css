@@ -19,25 +19,8 @@
 }
 
 body{
-   /* background-color: #be7d51;/*
-     /* 1. L'image de fond */
-    background-image: url('nk3.jpg');
-    
-    /* 2. On s'assure qu'elle couvre tout l'écran */
-    background-size: cover;           /* L'image remplit tout l'espace */
-    background-position: center center; /* Elle reste centrée */
-    background-attachment: fixed;     /* Elle ne bouge pas quand on scrolle */
-    background-repeat: no-repeat;     /* Elle ne se répète pas */
-    
-    /* 3. On enlève les marges blanches du navigateur */
-    margin: 0;
-    padding: 0;
-    
-    /* 4. On s'assure que le body fait toute la hauteur du téléphone */
-    min-height: 100vh;
-    /* AJOUT ICI : On force la largeur pour garder le design PC */
-    min-width: 1200px; 
-    overflow-x: hidden; 
+   background-color: hwb(19 62% 25% / 0.773);
+  
 }
 
 a{
